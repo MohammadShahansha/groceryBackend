@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 
+import { Model } from 'mongoose';
+
 export interface TUser {
   name: string;
   email: string;
@@ -15,10 +17,10 @@ export interface TUser {
   isDeleted: boolean;
 }
 
-// export interface UserModel extends Model<TUser> {
-//   isUserExistByCustomEmail(email: string): Promise<TUser>;
-//   isPasswordMatch(
-//     plainTextPassword: string,
-//     hashTextPassword: string,
-//   ): Promise<boolean>;
-// }
+export interface UserModel extends Model<TUser> {
+  isUserExistByCustomEmail(email: string): Promise<TUser>;
+  isPasswordMatch(
+    plainTextPassword: string,
+    hashTextPassword: string,
+  ): Promise<boolean>;
+}
