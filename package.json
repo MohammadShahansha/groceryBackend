@@ -21,6 +21,7 @@
     "@types/cors": "^2.8.17",
     "@types/http-status": "^1.1.2",
     "@types/jsonwebtoken": "^9.0.7",
+    "axios": "^1.7.7",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
@@ -28,6 +29,7 @@
     "http-status": "^2.0.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.5.3",
+    "sslcommerz-lts": "^1.1.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {

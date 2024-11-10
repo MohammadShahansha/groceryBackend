@@ -4,7 +4,7 @@ import { BuyerModel } from './buyer.model';
 const createBuyerProduct = async (buyer: TBuyer) => {
   const today = new Date();
   const transectionId =
-    'Markist-Shop' +
+    'grocery-Shop' +
     today.getFullYear() +
     '-' +
     today.getMonth() +

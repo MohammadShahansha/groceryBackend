@@ -4,6 +4,8 @@ import { loginRouter } from '../modules/auth/auth.route';
 import { vendorRouter } from '../modules/vendor/vendor.route';
 import { groceryRouter } from '../modules/grocery/grocery.route';
 import { buyerProductRouter } from '../modules/buyer/buyer.route';
+import { paymentRoute } from '../modules/payment/payment.route';
+import { addToCardRouter } from '../modules/addToCard/addToCard.route';
 const router = express.Router();
 
 const moduleRoutes = [
@@ -26,6 +28,14 @@ const moduleRoutes = [
   {
     path: '/buyer',
     route: buyerProductRouter,
+  },
+  {
+    path: '/payment',
+    route: paymentRoute,
+  },
+  {
+    path: '/cart',
+    route: addToCardRouter,
   },
 ];
 
