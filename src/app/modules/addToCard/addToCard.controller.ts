@@ -22,17 +22,6 @@ const getAllAddtoCard = catchAsinc(async (req, res) => {
     data: result,
   });
 });
-// const getSingleVendor = catchAsinc(async (req, res) => {
-//   const { _id } = req.params;
-
-//   const result = await vendorService.getSingleVendor(_id);
-//   sendResponse(res, {
-//     statusCode: 200,
-//     success: true,
-//     message: 'Single vendor created successfully',
-//     data: result,
-//   });
-// });
 const deleteAddToCard = catchAsinc(async (req, res) => {
   const { _id } = req.params;
   const result = await addToCardService.deleteAddToCard(_id);

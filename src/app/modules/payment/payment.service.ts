@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import axios from 'axios';
+// import axios from 'axios';
 import { AddToCardModel } from '../addToCard/addToCard.model';
 import { BuyerModel } from '../buyer/buyer.model';
 import { SSLService } from '../SSL/ssl.service';
-import config from '../../config';
+// import config from '../../config';
 
 const initiatPayment = async (_id: string) => {
   const totalData: any = await AddToCardModel.find().populate('productId');
